@@ -1,0 +1,7 @@
+<h1>¿Estás seguro que quieres eliminar esta computadora?</h1>
+<p>{{ object.numero }} {{object.marca}} </p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Sí, eliminar</button>
+    <a href="{% url 'inventario:computadora_list' %}">Cancelar</a>
+</form>

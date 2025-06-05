@@ -1,0 +1,8 @@
+<h1>Lista de Computadoras</h1>
+<ul>
+    {% for computadora in computadoras %}
+    <li>{{ estudiante.nombre }} {{ estudiante.apellido}}</li>
+    {% empty %}
+    <li>No hay estudiantes disponibles.</li>
+    {% endfor %}
+</ul>
