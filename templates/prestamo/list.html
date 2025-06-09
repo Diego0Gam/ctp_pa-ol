@@ -1,8 +1,8 @@
-<h1>Lista de Estudiantes</h1>
+<h1>Lista de Prestamos</h1>
 <ul>
-    {% for estudiante in estudiantes %}
-    <li>{{ estudiante.nombre }} {{ estudiante.apellido}}</li>
+    {% for prestamo in prestamos %}
+    <li>{{ prestamo.fecha_retiro }} {{ fecha.motivo }}</li>
     {% empty %}
-    <li>No hay estudiantes disponibles.</li>
+    <li>No hay prestamos disponibles.</li>
     {% endfor %}
 </ul>

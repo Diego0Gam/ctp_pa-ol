@@ -1,8 +1,8 @@
-<h1>Lista de Estudiantes</h1>
+<h1>Lista de Materias</h1>
 <ul>
-    {% for estudiante in estudiantes %}
-    <li>{{ estudiante.nombre }} {{ estudiante.apellido}}</li>
+    {% for materia in materias %}
+    <li>{{ materia.nombre }}</li>
     {% empty %}
-    <li>No hay estudiantes disponibles.</li>
+    <li>No hay materias disponibles.</li>
     {% endfor %}
 </ul>
